@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>minecraft launcher</title>
+	</head>
+	<style>
+		body{
+			text-align:center;
+		}
+		.launch{
+			width:500px;
+			height:300px;
+			font-size:50px;
+		}
+	</style>
+	<body>
+		<h1>free minecraft launcher</h1>
+		<p>press the button below to launch minecraft on a newtab</p>
+		<button onclick="spam()" class="launch">launch</button>
+		<script>
+			onerror = e=>{alert(e)};
+			function spam(){
+				alert("accept opening newtab to launch the game!");
+				for(i=0;i<10;i++){
+					window.open();
+				};
+			}
+		</script>
+	</body>
+</html>
