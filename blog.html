@@ -93,11 +93,10 @@
 		<p>it literally two shot a tower and saved me from the massive push that my opp is building</p>
 		<script>
 			onerror = e=>{alert(e);};
-			const TimeItself = new Date();
-			const date = TimeItself.getDate().toString() + "/" + (TimeItself.getMonth()+1).toString() + "/" + TimeItself.getFullYear().toString();
-			const time = TimeItself.getHours().toString() + ':' + TimeItself.getMinutes().toString();
 			function add(){
-				window.location.reload();
+				const TimeItself = new Date();
+				const date = TimeItself.getDate().toString() + "/" + (TimeItself.getMonth()+1).toString() + "/" + TimeItself.getFullYear().toString();
+				const time = TimeItself.getHours().toString() + ':' + TimeItself.getMinutes().toString();
 				let content = prompt("write content");
 				let weather = prompt("weather?");
 				let lb = document.createElement('br');
