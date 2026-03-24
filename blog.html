@@ -97,10 +97,13 @@
 			const date = TimeItself.getDate().toString() + "/" + TimeItself.getMonth().toString() + "/" + TimeItself.getFullYear().toString();
 			function add(){
 				let content = prompt("write content");
-				let lb = document.createElement('hr');
+				let lb = document.createElement('br');
 				let section = document.createElement('p');
+				let header = document.createElement('h4')
 				section.textContent = content;
+				header.textContent = date;
 				document.body.appendChild(lb);
+				document.body.appendChild(header);
 				document.body.appendChild(section);
 			};
 		</script>
