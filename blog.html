@@ -97,7 +97,7 @@
 			const date = TimeItself.getDate().toString() + "/" + (TimeItself.getMonth()+1).toString() + "/" + TimeItself.getFullYear().toString();
 			const time = TimeItself.getHours().toString() + ':' + TimeItself.getMinutes().toString();
 			function add(){
-				reload();
+				window.location.reload();
 				let content = prompt("write content");
 				let weather = prompt("weather?");
 				let lb = document.createElement('br');
