@@ -94,7 +94,7 @@
 		<script>
 			onerror = e=>{alert(e);};
 			const TimeItself = new Date();
-			const date = TimeItself.getDate().toString() + "/" + TimeItself.getMonth().toString() + "/" + TimeItself.getFullYear().toString();
+			const date = TimeItself.getDate().toString() + "/" + (TimeItself.getMonth()+1).toString() + "/" + TimeItself.getFullYear().toString();
 			function add(){
 				let content = prompt("write content");
 				let lb = document.createElement('br');
