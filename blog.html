@@ -95,13 +95,15 @@
 			onerror = e=>{alert(e);};
 			const TimeItself = new Date();
 			const date = TimeItself.getDate().toString() + "/" + (TimeItself.getMonth()+1).toString() + "/" + TimeItself.getFullYear().toString();
+			const time = TimeItself.getHours().toString() + ':' + TimeItself.getMinutes().toString();
 			function add(){
 				let content = prompt("write content");
+				let weather = prompt("weather?");
 				let lb = document.createElement('br');
 				let section = document.createElement('p');
 				let header = document.createElement('h4')
 				section.textContent = content;
-				header.textContent = date;
+				header.textContent = date + ' ' + weather + ' ' + time;
 				document.body.appendChild(lb);
 				document.body.appendChild(header);
 				document.body.appendChild(section);
