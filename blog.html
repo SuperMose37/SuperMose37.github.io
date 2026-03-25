@@ -97,17 +97,17 @@
 				const TimeItself = new Date();
 				const date = TimeItself.getDate().toString() + "/" + (TimeItself.getMonth()+1).toString() + "/" + TimeItself.getFullYear().toString();
 				const time = TimeItself.getHours().toString() + ':' + TimeItself.getMinutes().toString();
+				let ampm;
 				if(TimeItself.getHours()>=12){
-					let ampm = "pm";
-				};
-				else{
-					let ampm = "am";
+					ampm = "pm";
+				}else{
+					ampm = "am";
 				};
 				let content = prompt("write content");
 				let weather = prompt("weather?");
 				let lb = document.createElement('br');
 				let section = document.createElement('p');
-				let header = document.createElement('h4')
+				let header = document.createElement('h4');
 				section.textContent = content;
 				header.textContent = date + ' ' + weather + ' ' + time + ampm;
 				document.body.appendChild(lb);
