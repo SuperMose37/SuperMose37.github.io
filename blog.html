@@ -23,12 +23,14 @@
 		<h3>the actual blog</h3>
 		<button onclick="add()">add entry</button>
 		<button onclick="login()">login</button>
-		<dialog open>
+		<dialog id="login">
+			<form action="log()">
 			<span>username:</span><input>
 			<br>
 			<span>password:</span><input type="password">
 			<br>
 			<input type="submit">
+			</form>
 		</dialog>
 		<h4>11/2/2026 sunny 10:49pm</h4>
 		<p>ngl today kinda nice, is just that i lost like 5 games of clash, prob becuz of my shi deck :/</p>
@@ -122,6 +124,9 @@
 				document.body.appendChild(header);
 				document.body.appendChild(section);
 			};
+		function login(){
+				document.getElementById("login").showModal();
+		};
 		</script>
 	</body>
 </html>
